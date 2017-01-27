@@ -77,6 +77,7 @@ if(process.argv[2] === "spotify-this-song"){
         console.log('Error occurred: ' + err);
         return;
     }else {
+    	// Displays track info in terminal/gitbash
     	console.log("Track Name: " + data.tracks.items[0].name)
     	console.log("Artist: " + data.tracks.items[0].artists[0].name)
     	console.log("Album: " + data.tracks.items[0].album.name)
